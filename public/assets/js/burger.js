@@ -14,7 +14,7 @@ $(function () {
             data: newBurger
         }).then(function(){
             console.log("Created a new Burger");           
-            // location.reload();
+            location.reload();
         });
     });
 
@@ -29,7 +29,7 @@ $(function () {
             data: devoured
         }).then(function(){
             console.log("changed devoured to: ", devoured.devoured);
-            // location.reload();
+            location.reload();
         });
     });
 });
