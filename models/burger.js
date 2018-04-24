@@ -10,6 +10,7 @@ var burger = {
         console.log("inside burger.js insertOne: ");
         orm.insertOne("burgers",cols,values,function(res){
             console.log("Rows Affected: ",res.affectedRows);
+            cb(res);
         });
     },
     updateOne: function(objCol, condition, cb){
